@@ -78,6 +78,11 @@ nav h1 {
   margin: auto;
 	line-height: 40px;
 }
+@media screen and (min-width: 397px) {
+	nav h1 {
+		line-height: 80px;
+	}
+}
 nav h1 a {
   color: #fff;
   font-size: 14pt;
@@ -213,10 +218,7 @@ nav h1 a {
 	flex-wrap: wrap;
 }
 .inside header {
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
