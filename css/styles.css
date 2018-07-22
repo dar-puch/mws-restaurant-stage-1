@@ -59,7 +59,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	padding: 1em;
 text-align: center;
 box-sizing: border-box;
+padding: 30px 10px;
 }
+
+
 /* ====================== Navigation ====================== */
 .hamburger-icon svg {
 	width: 32px;
@@ -232,9 +235,7 @@ margin: auto;
   width: 100%;
 }
 .inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
+
 }
 #restaurant-name {
   color: #f18200;
