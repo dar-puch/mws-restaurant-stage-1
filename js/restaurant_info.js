@@ -90,7 +90,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const srcBig = DBHelper.imageUrlForRestaurant(restaurant);
   const srcMedium = DBHelper.imageUrlMedium(restaurant);
   const alt = "restaurant " + restaurant.name;
-  pictHtml = `<source media="(min-width: 560px)" srcset="${srcBig} "><source media="(min-width: 360px and max-width: 559px)" srcset="${srcMedium} 1x, ${srcBig} 2x"><img src="${srcMedium}" alt="${alt}" class="restaurant-img">`;
+  pictHtml = `<source media="(min-width: 560px and max-width: 979px)" srcset="${srcBig} "><source media="(min-width: 360px and max-width: 559px,  min-width: 980px and max-width: 1179px)" srcset="${srcMedium} 1x, ${srcBig} 2x"><img src="${srcMedium}" alt="${alt}" class="restaurant-img">`;
   picture.innerHTML = pictHtml;
 
   const cuisine = document.getElementById('restaurant-cuisine');
