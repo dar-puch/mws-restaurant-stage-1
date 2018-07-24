@@ -73,9 +73,12 @@ padding: 30px 10px;
 }
 nav {
   width: 100%;
-  min-height: 80px;
+  height: 80px;
   background-color: #252831;
   text-align:center;
+	position: fixed;
+	z-index: 10;
+	top: 0;
 }
 nav h1 {
   margin: auto;
@@ -101,6 +104,8 @@ nav h1 a {
     margin: 0;
     width: 100%;
 		box-sizing: border-box;
+	margin-top: 80px;
+
 }
 
 /* Display list items side by side */
@@ -131,6 +136,7 @@ nav h1 a {
   height: 400px;
   width: 100%;
   background-color: #ccc;
+	margin-top: 80px;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -228,21 +234,19 @@ nav h1 a {
 }
 .inside header {
   width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 10;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 400px;
 	width: 95%;
-margin: 80px auto 0;
+margin: 0 auto;
 }
 .inside #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
 	z-index: 2;
+	margin-top: 0;
 }
 .inside #footer {
 
