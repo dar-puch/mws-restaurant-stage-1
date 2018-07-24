@@ -218,6 +218,9 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+.col {
+	width: 100%;
+}
 .inside #maincontent{
 	display: flex;
 	flex-wrap: wrap;
@@ -322,4 +325,23 @@ margin: auto;
   #restaurants-list li {
 width: calc(100%/3 - 2em);
 }
+}
+
+@media screen and (min-width: 980px) {
+	.col {
+		width: 50%;
+	}
+	.map {
+		order: 2;
+	}
+	.rest-info {
+		order: 1;
+	}
+	.inside #map-container {
+		width: 50%;
+		height: 100%;
+		position: fixed;
+		top: 80px;
+		right: 0;
+	}
 }
