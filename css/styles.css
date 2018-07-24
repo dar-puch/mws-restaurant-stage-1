@@ -38,11 +38,13 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 .column {
 	width: 100%;
 }
-.text-center {
-	text-align: center;
+.skip-link {
+  position: absolute;
+  left: -999em;
 }
-.text-left {
-	text-align: left;
+.skip-link:focus {
+  position: absolute;
+  left: 0;
 }
 
 #maincontent {

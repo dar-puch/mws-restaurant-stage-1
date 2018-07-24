@@ -11,19 +11,15 @@
 </head>
 
 <body class="inside">
+  <a href="#maincontent" class="skip-link">Skip to main content</a> 
   <!-- Beginning header -->
   <header>
-    <!-- Beginning nav
-    <a id="hamburger-icon" class="hamburger-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-        </svg>
-      </a> -->
+    <!-- Beginning nav-->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a role="menuitem" href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" aria-label="breadcrumbs" >
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -36,7 +32,7 @@
     <div class="col map">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application"></div>
     </section>
     <!-- End map -->
   </div> <!-- End col -->
