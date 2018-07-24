@@ -221,23 +221,28 @@ nav h1 a {
 .col {
 	width: 100%;
 }
+
 .inside #maincontent{
 	display: flex;
 	flex-wrap: wrap;
 }
 .inside header {
   width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 400px;
 	width: 95%;
-margin: auto;
+margin: 80px auto 0;
 }
 .inside #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
+	z-index: 2;
 }
 .inside #footer {
 
@@ -299,7 +304,6 @@ margin: auto;
   margin: 0 0 30px;
   overflow: hidden;
   padding: 20px;
-  position: relative;
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -341,7 +345,12 @@ width: calc(100%/3 - 2em);
 		width: 50%;
 		height: 100%;
 		position: fixed;
-		top: 80px;
+		top: 0;
 		right: 0;
+	}
+
+	.inside #breadcrumb,
+	.inside #footer {
+		width: 50%;
 	}
 }
