@@ -7,7 +7,7 @@
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
   <title>Restaurant Info</title>
 </head>
 
@@ -20,7 +20,7 @@
       <h1><a role="menuitem" href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" aria-label="breadcrumbs" >
+    <ul id="breadcrumb" aria-label="breadcrumbs">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -31,30 +31,32 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <div class="col map">
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map" role="application" aria-hidden="true"></div>
-    </section>
-    <!-- End map -->
-  </div> <!-- End col -->
+      <!-- Beginning map -->
+      <section id="map-container">
+        <div id="map" role="application" aria-hidden="true"></div>
+      </section>
+      <!-- End map -->
+    </div>
+    <!-- End col -->
     <div class="col rest-info">
       <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <div class="pic-wrap">
-      <picture id="restaurant-pict"></picture>
-      </div>
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
-    </section>
-    <!-- end restaurant -->
-    <!-- Beginning reviews -->
-    <section id="reviews-container">
-      <ul id="reviews-list"></ul>
-    </section>
-    <!-- End reviews -->
-  </div> <!-- End col -->
+      <section id="restaurant-container">
+        <h1 id="restaurant-name"></h1>
+        <div class="pic-wrap">
+          <picture id="restaurant-pict"></picture>
+        </div>
+        <p id="restaurant-cuisine"></p>
+        <p id="restaurant-address"></p>
+        <table id="restaurant-hours"></table>
+      </section>
+      <!-- end restaurant -->
+      <!-- Beginning reviews -->
+      <section id="reviews-container">
+        <ul id="reviews-list"></ul>
+      </section>
+      <!-- End reviews -->
+    </div>
+    <!-- End col -->
   </main>
   <!-- End main -->
 
@@ -70,7 +72,7 @@
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
- <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script> -->
+  <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script> -->
   <!-- End scripts -->
 
 </body>

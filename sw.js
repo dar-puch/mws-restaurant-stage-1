@@ -1,19 +1,18 @@
 self.addEventListener('install', function(event) {
   var urlsToCache = [
     '/',
-'/css/styles.css',
-'/js/main.js',
-'/js/restaurant_info.js',
-'/js/dbhelper.js',
-'/data/restaurants.json',
+    '/css/styles.css',
+    '/js/main.js',
+    '/js/restaurant_info.js',
+    '/js/dbhelper.js',
+    '/data/restaurants.json',
   ];
 
   event.waitUntil(
-  caches.open('restaurant-v1').then(function(cache){
-    console.log('cache open');
-    cache.addAll(urlsToCache);
-  })
-);
+    caches.open('restaurant-v1').then(function(cache) {
+      cache.addAll(urlsToCache);
+    })
+  );
 });
 
 
