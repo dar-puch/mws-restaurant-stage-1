@@ -2,7 +2,21 @@ let restaurants,
   neighborhoods,
   cuisines
 var newMap
-var markers = []
+var markers = [];
+
+/* register serviceWorker */
+
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('../sw.js')
+    .then(function() {
+    console.log('Registration worked!');
+  }).catch(function() {
+    console.log('Registration failed!');
+  });
+};
+
+
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -202,6 +216,8 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 }
+
+
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map

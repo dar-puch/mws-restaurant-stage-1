@@ -40,11 +40,14 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 .skip-link {
   position: absolute;
-  left: -999em;
+  left: -100em;
+	z-index: 1;
 }
 .skip-link:focus {
   position: absolute;
-  left: 0;
+  left: 10px;
+	z-index: 11;
+	color: white;
 }
 
 #maincontent {
@@ -343,7 +346,7 @@ width: calc(100%/3 - 2em);
 		width: 50%;
 		height: 100%;
 		position: fixed;
-		top: 0;
+		top: 80px;
 		right: 0;
 	}
 
